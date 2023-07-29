@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Overpass Mono;
+  background-color: #c5e4e7;
+  color: #5e7a7d;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  background-color: #fff;
+  box-shadow: 0 0.2rem 1rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-top: 5rem;
+  padding: 3rem;
+  display: flex;
+  /* changes for Mobile: 375px */
+  /* flex-direction: row; (default) */
+  width: 96rem;
+  border-radius: 2rem;
+  gap: 3rem;
+}
+
+/* ********************* */
+/* COLUMN 1 (USER INPUT) */
+/* ********************* */
+
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  flex: 1; /* = flex-basis=0: equal sized cols */
+  /* changes for Mobile: 375px */
+  min-width: 37.5rem;
+  gap: 4rem;
+}
+
+/* COLUMN 1 SECTIONS */
+
+.bill-section,
+.people-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.tip-btn-section {
+  margin-top: 1rem;
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+  /* changes for Mobile: 375px */
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* COLUMN 1 LABELS */
+
+.label-col-1 {
+  margin-bottom: 0.5rem;
+}
+
+.bill-section,
+.people-section {
+  position: relative;
+}
+
+.icon-people,
+.icon-euro {
+  width: 2.6rem;
+  height: 2.6rem;
+  opacity: 70%;
+  position: absolute;
+  top: 0;
+  transform: translate(40%, 130%);
+}
+
+/* COLUMN 1 INPUTS & BUTTONS */
+
+input,
+.btn {
+  font-family: inherit;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  height: 4.6rem;
+  transition: all 0.3s;
+}
+
+input {
+  background-color: #e6fcf5;
+  color: #00494d;
+  font-size: 2.4rem;
+  text-align: end;
+  padding-right: 1.6rem;
+}
+
+.btn {
+  width: 100%;
+  background-color: #00494d;
+  color: #e6fcf5;
+  font-size: 2rem;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+input:hover {
+  background-color: #96f2d7;
+}
+
+input:hover::placeholder,
+input:focus::placeholder {
+  color: #e6fcf5;
+}
+
+.btn:hover {
+  background-color: #96f2d7;
+  color: #00494d;
+  cursor: pointer;
+}
+
+input:focus,
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem #26c0ab;
+}
+
+.tip-btn-custom {
+  width: 100%;
+}
+
+.tip-btn-custom::placeholder {
+  color: #e6fcf5;
+}
+
+.error-numPeople,
+.error-bill,
+.error-customTip {
+  display: inline-block;
+  margin-top: 7px;
+  justify-content: end;
+  color: #eb7105;
+  font-size: 1.6rem;
+}
+
+.error {
+  display: flex;
+  justify-content: end;
+  height: 3rem;
+}
+
+.error-border {
+  border: 0.2rem solid #eb7105;
+}
+
+/* ****************** */
+/* COLUMN 2 (CALCULATIONS) */
+/* ****************** */
+
+.col-2 {
+  flex-direction: column;
+  display: flex;
+  flex: 1; /* equal sized cols */
+  background-color: #00494d;
+  border-radius: 12px;
+  padding: 3rem;
+  /* changes for Mobile: 375px */
+  min-width: 37.5rem;
+  gap: 3rem;
+}
+
+/* COLUMN 2 LABELS */
+
+.tip-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.tip-sub-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-col-2 {
+  color: #f4fafa;
+}
+
+.sub-label {
+  color: #f4fafa;
+  font-size: 1.6rem;
+  margin-top: 5px;
+}
+
+/* COLUMN 2 CALCULATIONS */
+
+.bill-tip-total,
+.tip-amount-pp {
+  color: #e6fcf5;
+  font-size: 3.4rem;
+}
+
+.total-amount-pp {
+  color: #96f2d7;
+  font-size: 4.2rem;
+}
+
+/* BUTTON */
+
+.reset-btn {
+  font-family: Space Mono;
+  background-color: #c8d8d3;
+  color: #00494d;
+  font-size: 2.4rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  height: 4.6rem;
+  margin-top: auto;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* *************** */
+/* MOBILE -- 375px */
+/* *************** */
+
+@media (max-width: 375px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    width: 37.5rem;
+    border-radius: 2rem 2rem 0 0;
+    gap: 0rem;
+  }
+
+  .col-1 {
+    min-width: 32.5rem;
+    gap: 1rem;
+  }
+
+  .col-2 {
+    min-width: 32.5rem;
+    gap: 2rem;
+  }
+
+  .tip-btn-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tip-btn-custom::placeholder {
+    text-align: center;
+  }
+}
