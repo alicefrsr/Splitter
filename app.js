@@ -53,6 +53,8 @@ const calcOutputs = function (percent) {
   }
 };
 
+billAmount.focus();
+
 //////// Events handlers
 btnTip5.addEventListener('click', () => calcOutputs(5));
 btnTip10.addEventListener('click', () => calcOutputs(10));
@@ -73,6 +75,7 @@ btnTipCustom.addEventListener('change', function (e) {
 });
 
 btnReset.addEventListener('click', function () {
+  billAmount.focus();
   billAmount.value = '';
   numPeople.value = '';
 
