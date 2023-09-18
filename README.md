@@ -1,6 +1,6 @@
 # Splitter
 
-> A simple tip calculator app.
+> A simple tip calculator app to split a bill and include a tip.
 
 Frontend Mentor challenge. To learn and practice: Vanilla Javascript, CSS
 integration, responsive CSS.
@@ -10,6 +10,6 @@ integration, responsive CSS.
 - user enters bill amount, number of splitters, tip %
 - total to pay per person is displayed
 
-### Visit the site:
+### Live site:
 
 https://splitter-demo.netlify.app/
