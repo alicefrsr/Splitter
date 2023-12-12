@@ -2,96 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Overpass+Mono:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
-      rel="stylesheet" />
-    <link
       rel="stylesheet"
-      href="style.css" />
+    />
+    <link rel="stylesheet" href="style.css" />
 
     <title>SPLITTER - Tip Calculator</title>
   </head>
   <body>
     <header>
       <h1>
-        <img
-          src="logo.svg"
-          alt="Splitter Logo" />
+        <img src="logo.svg" alt="Splitter Logo" />
       </h1>
     </header>
     <main>
       <div class="container">
         <div class="row">
+          <!-- left-side: user inputs -->
           <div class="col-1">
+            <!-- bill amount input -->
             <div class="bill-section">
               <svg
                 aria-hidden="true"
                 class="icon icon-euro"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
                   fill-rule="evenodd"
                   d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.736 6.979C9.208 6.193 9.696 6 10 6c.304 0 .792.193 1.264.979a1 1 0 001.715-1.029C12.279 4.784 11.232 4 10 4s-2.279.784-2.979 1.95c-.285.475-.507 1-.67 1.55H6a1 1 0 000 2h.013a9.358 9.358 0 000 1H6a1 1 0 100 2h.351c.163.55.385 1.075.67 1.55C7.721 15.216 8.768 16 10 16s2.279-.784 2.979-1.95a1 1 0 10-1.715-1.029c-.472.786-.96.979-1.264.979-.304 0-.792-.193-1.264-.979a4.265 4.265 0 01-.264-.521H10a1 1 0 100-2H8.017a7.36 7.36 0 010-1H10a1 1 0 100-2H8.472c.08-.185.167-.36.264-.521z"
-                  clip-rule="evenodd"></path>
+                  clip-rule="evenodd"
+                ></path>
               </svg>
-              <label
-                class="label-col-1"
-                for="billAmount"
-                >Bill
-              </label>
+              <label class="label-col-1" for="billAmount">Bill </label>
               <input
                 aria-describedby="error-1"
                 type="text"
                 id="billAmount"
-                placeholder="0.00" />
-
-              <p
-                id="error-1"
-                class="error">
+                placeholder="0.00"
+              />
+              <p id="error-1" class="error">
                 <span class="error-bill"></span>
               </p>
             </div>
+            <!-- number of people input -->
             <div class="people-section">
               <svg
                 aria-hidden="true"
                 class="icon icon-people"
                 fill="currentColor"
                 viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path
-                  d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path>
+                  d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+                ></path>
               </svg>
-              <label
-                class="label-col-1"
-                for="numPeople"
+              <label class="label-col-1" for="numPeople"
                 >Number of people
               </label>
               <input
                 aria-describedby="error-2"
                 type="text"
                 id="numPeople"
-                placeholder="0" />
-
-              <p
-                id="error-2"
-                class="error">
+                placeholder="0"
+              />
+              <p id="error-2" class="error">
                 <span class="error-numPeople"></span>
               </p>
             </div>
+            <!-- tip amount input -->
             <div>
               <p class="label-col-1">Select Tip %</p>
               <ul class="tip-btn-section">
@@ -105,17 +91,17 @@
                     class="btn tip-btn-custom"
                     type="text"
                     id="customTipPercentage"
-                    placeholder="Custom" />
+                    placeholder="Custom"
+                  />
                 </li>
               </ul>
-              <p
-                id="error-3"
-                class="error">
+              <p id="error-3" class="error">
                 <span class="error-customTip"></span>
               </p>
             </div>
           </div>
 
+          <!-- right-side: outputs -->
           <div class="col-2">
             <div class="tip-row">
               <div class="label-col-2">
