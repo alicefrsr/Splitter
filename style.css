@@ -22,15 +22,16 @@ h1 {
   margin-top: 6rem;
 }
 
+/* ************* */
+/*  MOBILE-FIRST */
+/* ************* */
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3rem;
 }
-/* ************* */
-/*  MOBILE-FIRST */
-/* ************* */
 
 .bg {
   background-color: #fff;
@@ -253,7 +254,7 @@ input:focus,
 /* above 599px */
 /* *************** */
 
-@media (min-width: 599px) {
+@media screen and (min-width: 599px) {
   .bg {
     align-items: center;
     width: 54rem;
@@ -284,7 +285,7 @@ input:focus,
 /* TABLETS -- 940px */
 /* *************** */
 
-@media (min-width: 940px) {
+@media screen and (min-width: 940px) {
   .bg {
     flex-direction: row;
     align-items: center;
