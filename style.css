@@ -23,9 +23,10 @@ h1 {
 }
 
 .container {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
 }
 /* ************* */
 /*  MOBILE-FIRST */
