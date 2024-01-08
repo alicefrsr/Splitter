@@ -34,7 +34,7 @@ h1 {
 }
 
 .bg {
-  /* width: 38rem; */
+  /* width: 37rem; */
   /* width: 100%; */
   background-color: #fff;
   border-radius: 2rem;
@@ -56,7 +56,7 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  /* min-width: 30rem; */
+  min-width: 30rem;
   border: 4px solid red;
 }
 
@@ -154,7 +154,7 @@ input:focus,
 
 .tip-btn-custom::placeholder {
   color: #e6fcf5;
-  color: #5e7a7d;
+  /* color: #5e7a7d; */
   text-align: center;
 }
 
@@ -270,7 +270,7 @@ input:focus,
 
   .tip-btn-custom::placeholder {
     color: #e6fcf5;
-    color: #5e7a7d;
+    /* color: #5e7a7d; */
     /* padding-left: 0.5rem; */
   }
 
