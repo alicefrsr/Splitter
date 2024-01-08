@@ -34,16 +34,16 @@ h1 {
 }
 
 .bg {
+  width: 40rem;
   background-color: #fff;
   border-radius: 2rem 2rem 0 0;
-
   margin-top: 5rem;
   padding: 3rem 0;
   display: flex;
-  /* changes above 390px */
+  /* changes to row above 940px */
   flex-direction: column;
+
   align-items: center;
-  /* width: 96rem; */
   gap: 3rem;
 }
 
@@ -153,6 +153,8 @@ input:focus,
 
 .tip-btn-custom::placeholder {
   color: #e6fcf5;
+  color: #5e7a7d;
+  text-align: center;
 }
 
 .error-numPeople,
@@ -188,7 +190,6 @@ input:focus,
   padding: 3rem;
   /* changes for above 390px */
   min-width: 36rem;
-  /* height: 48rem; */
   gap: 3rem;
 }
 
@@ -247,17 +248,17 @@ input:focus,
 /* *********** */
 /* BREAKPOINTS */
 /* md: 940px */
-/* sm: 599px */
+/* sm: 500px */
 /* *************** */
 
 /* *************** */
-/* above 599px */
+/* above 500px */
 /* *************** */
 
-@media screen and (min-width: 599px) {
+@media only screen and (min-width: 500px) {
   .bg {
     align-items: center;
-    width: 54rem;
+    width: 50rem;
     /* width: 42rem; */
     /* padding: 3rem; */
     border-radius: 2rem;
@@ -265,12 +266,17 @@ input:focus,
     /* gap: 0rem; */
   }
 
+  .tip-btn-custom::placeholder {
+    color: #e6fcf5;
+    color: #5e7a7d;
+    /* padding-left: 0.5rem; */
+  }
+
   .tip-btn-section {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
   .inputs {
-    /* max-width: 37.5rem; */
     padding: 0 6rem;
   }
 
@@ -285,7 +291,7 @@ input:focus,
 /* TABLETS -- 940px */
 /* *************** */
 
-@media screen and (min-width: 940px) {
+@media only screen and (min-width: 940px) {
   .bg {
     flex-direction: row;
     align-items: center;
@@ -304,9 +310,5 @@ input:focus,
     min-width: 42rem;
     height: 42rem;
     padding: 3rem;
-  }
-
-  .tip-btn-custom::placeholder {
-    text-align: center;
   }
 }
