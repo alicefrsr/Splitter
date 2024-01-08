@@ -34,10 +34,10 @@ h1 {
 }
 
 .bg {
-  min-width: 40rem;
+  min-width: 38rem;
   background-color: #fff;
   border-radius: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: 3rem 0;
   display: flex;
   /* changes to row above 940px */
@@ -56,7 +56,6 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  border: 4px solid red;
 }
 
 /* INPUTS SECTION */
@@ -190,7 +189,6 @@ input:focus,
   padding: 3rem;
   /* changes for above 500px */
   min-width: 32rem;
-  border: 4px solid blue;
   gap: 3rem;
 }
 
@@ -278,15 +276,15 @@ input:focus,
   }
 
   .inputs {
+    min-width: 50rem;
     padding: 0 6rem;
   }
 
-  /* .outputs { */
-  /* max-width: 37.5rem; */
-  /* padding: 3rem; */
-  /* max-width: 80%; */
-  /* } */
-}
+  .outputs {
+    padding: 3rem;
+    min-width: 38rem;
+    gap: 3rem;
+  }
 
 /* *************** */
 /* TABLETS -- 940px */
