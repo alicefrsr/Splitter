@@ -34,7 +34,7 @@ h1 {
 }
 
 .bg {
-  min-width: 36rem;
+  min-width: 34rem;
   background-color: #fff;
   border-radius: 2rem;
   margin-top: 2rem;
@@ -52,7 +52,7 @@ h1 {
 /* ********************* */
 
 .inputs {
-  max-width: 32rem;
+  max-width: 29rem;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -188,7 +188,7 @@ input:focus,
   border-radius: 12px;
   padding: 3rem;
   /* changes for above 500px */
-  min-width: 32rem;
+  min-width: 29rem;
   gap: 3rem;
 }
 
