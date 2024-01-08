@@ -186,7 +186,7 @@ input:focus,
   /* flex: 1; equal sized cols */
   background-color: #00494d;
   border-radius: 12px;
-  padding: 3rem;
+  padding: 3rem 1.2rem;
   /* changes for above 500px */
   min-width: 29rem;
   gap: 3rem;
@@ -208,11 +208,11 @@ input:focus,
 
 .label-outputs {
   color: #f4fafa;
+  font-size: 1.4rem;
 }
 
 .sub-label {
   color: #f4fafa;
-  font-size: 1.6rem;
   margin-top: 5px;
 }
 
@@ -285,6 +285,18 @@ input:focus,
     min-width: 38rem;
     gap: 3rem;
   }
+
+
+.label-outputs {
+  color: #f4fafa;
+   font-size: 1.8rem;
+}
+
+.sub-label {
+  color: #f4fafa;
+  font-size: 1.6rem;
+  margin-top: 5px;
+}
 
 /* *************** */
 /* TABLETS -- 940px */
