@@ -286,16 +286,16 @@ input:focus,
     gap: 3rem;
   }
 
+  .label-outputs {
+    color: #f4fafa;
+    font-size: 1.8rem;
+  }
 
-.label-outputs {
-  color: #f4fafa;
-   font-size: 1.8rem;
-}
-
-.sub-label {
-  color: #f4fafa;
-  font-size: 1.6rem;
-  margin-top: 5px;
+  .sub-label {
+    color: #f4fafa;
+    font-size: 1.6rem;
+    margin-top: 5px;
+  }
 }
 
 /* *************** */
